@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreApplication", "DotNetCoreApplication\DotNetCoreApplication.csproj", "{888528EC-29FA-499D-ACE6-F4034C1BA65D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBaseFiles", "DataBaseFiles", "{74CB305B-DF30-49B6-9967-20166874B2F7}"
+	ProjectSection(SolutionItems) = preProject
+		EmployeeDB.txt = EmployeeDB.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{888528EC-29FA-499D-ACE6-F4034C1BA65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888528EC-29FA-499D-ACE6-F4034C1BA65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888528EC-29FA-499D-ACE6-F4034C1BA65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888528EC-29FA-499D-ACE6-F4034C1BA65D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3D69D05-D229-48A5-BD7D-2902AD4D0CA7}
+	EndGlobalSection
+EndGlobal
