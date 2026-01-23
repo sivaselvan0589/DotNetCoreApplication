@@ -21,12 +21,12 @@ namespace DotNetCoreApplication.Utility
 
         public DbConnection GetConnection()
         {
-            return new SqlConnection(_config.GetConnectionString("DBSqlConnection"));
+            return new SqlConnection(_config["Db:ConnectionString"]);
         }
 
         public T Get<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
         {
-            using (IDbConnection db = new SqlConnection(_config.GetConnectionString("DBSqlConnection")))
+            using (IDbConnection db = new SqlConnection(_config["Db:ConnectionString"]))
             {
                 return db.Query<T>(sp, parms, commandType: commandType).FirstOrDefault();
             }
@@ -34,7 +34,7 @@ namespace DotNetCoreApplication.Utility
 
         public List<T> GetAll<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
         {
-            using (IDbConnection db = new SqlConnection(_config.GetConnectionString("DBSqlConnection")))
+            using (IDbConnection db = new SqlConnection(_config["Db:ConnectionString"]))
             {
                 return db.Query<T>(sp, parms, commandType: commandType).ToList();
             }
@@ -42,7 +42,7 @@ namespace DotNetCoreApplication.Utility
 
         public int Execute(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
         {
-            using (IDbConnection db = new SqlConnection(_config.GetConnectionString("DBSqlConnection")))
+            using (IDbConnection db = new SqlConnection(_config["Db:ConnectionString"]))
             {
                 return db.Execute(sp, parms, commandType: commandType);
             }
@@ -51,7 +51,7 @@ namespace DotNetCoreApplication.Utility
         public T Insert<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
         {
             T result;
-            using (IDbConnection db = new SqlConnection(_config.GetConnectionString("DBSqlConnection")))
+            using (IDbConnection db = new SqlConnection(_config["Db:ConnectionString"]))
             {
                 try
                 {
@@ -89,7 +89,7 @@ namespace DotNetCoreApplication.Utility
         public T Update<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
         {
             T result;
-            using (IDbConnection db = new SqlConnection(_config.GetConnectionString("DBSqlConnection")))
+            using (IDbConnection db = new SqlConnection(_config["Db:ConnectionString"]))
             {
                 try
                 {
