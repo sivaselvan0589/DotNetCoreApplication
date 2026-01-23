@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using DotNetCoreApplication.Entities;
 using DotNetCoreApplication.Interfaces;
 using DotNetCoreApplication.Models;
-using Microsoft.Extensions.Hosting;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetCoreApplication.Controllers
@@ -13,13 +13,11 @@ namespace DotNetCoreApplication.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeManager;
-        private readonly IHostEnvironment _hostingEnvironment;
-
-
-        public EmployeeController(IEmployeeService employeeManager, IHostEnvironment hostingEnvironment)
+      
+        public EmployeeController(IEmployeeService employeeManager)
         {
             _employeeManager = employeeManager;
-            _hostingEnvironment = hostingEnvironment;
+            
         }
 
 
