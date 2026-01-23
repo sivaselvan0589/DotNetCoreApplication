@@ -33,6 +33,7 @@ namespace DotNetCoreApplication
     Configuration.GetConnectionString("DefaultConnection")
     ?? Configuration["Db:ConnectionString"];
 
+            Console.WriteLine($"Conn string found: {!string.IsNullOrEmpty(connectionString)}");
             //Configure Connection String
             services.AddDbContext<DataContext>(options =>
               options.UseSqlServer(connectionString));
