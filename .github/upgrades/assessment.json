@@ -1,0 +1,378 @@
+{
+  "settings": {
+    "components": {
+      "code": false,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-01-23T05:02:04.1217729Z",
+  "analysisEndTime": "2026-01-23T05:02:10.1201553Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 5,
+      "incidents": 11,
+      "effort": 11
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 1,
+        "Optional": 1,
+        "Potential": 9,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 4,
+        "Project": 1,
+        "Api": 6
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+      "startingProject": true,
+      "issues": 5,
+      "storyPoints": 11,
+      "properties": {
+        "appName": "DotNetCoreApplication",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "netcoreapp3.1"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 27,
+        "numberOfCodeFiles": 21,
+        "linesTotal": 903,
+        "linesOfCode": 788,
+        "totalApiScanned": 1670,
+        "minLinesOfCodeToChange": 6,
+        "maxLinesOfCodeToChange": 6
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "7ca4d8d5-a13a-4416-955c-996b7f162960",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2",
+              "protected": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2",
+            "label": "Microsoft.EntityFrameworkCore.SqlServer 3.1.8",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.SqlServer",
+              "PackageVersion": "3.1.8",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "764d520d-6682-45ec-a481-357f7efc9b8e",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Tools, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2",
+              "protected": "Microsoft.EntityFrameworkCore.Tools, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Tools, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Tools, 3.1.8\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2",
+            "label": "Microsoft.EntityFrameworkCore.Tools 3.1.8",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Tools",
+              "PackageVersion": "3.1.8",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e19aa3b9-6ed3-4660-bc58-55a76f09489c",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+              "protected": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+            "snippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "protectedSnippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "label": "Microsoft.VisualStudio.Web.CodeGeneration.Design 3.1.3",
+            "properties": {
+              "PackageId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+              "PackageVersion": "3.1.3",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "fc50dbe8-3546-4d71-9241-91b95c10250e",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.EntityFrameworkCore.SqlServer.Design, and replace with new package Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6",
+              "protected": "Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.EntityFrameworkCore.SqlServer.Design, and replace with new package Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.EntityFrameworkCore.SqlServer.Design, and replace with new package Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.EntityFrameworkCore.SqlServer.Design, and replace with new package Microsoft.EntityFrameworkCore.SqlServer.Design, 1.1.6",
+            "label": "Microsoft.EntityFrameworkCore.SqlServer.Design 1.1.6",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.SqlServer.Design",
+              "PackageVersion": "1.1.6",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b739c4d4-fd4e-4a8a-939b-094baa5f690e",
+          "ruleId": "Project.0002",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: netcoreapp3.1\nRecommended target framework: net10.0",
+              "protected": "Current target framework: netcoreapp3.1\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+            "snippet": "Current target framework: netcoreapp3.1\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: netcoreapp3.1\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "netcoreapp3.1",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "fb874584-8c65-4138-bef5-ae5683296c77",
+          "ruleId": "Api.0002",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.AspNetCore.Hosting.IWebHostEnvironment. Microsoft.Extensions.Hosting",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public EmployeeController(IEmployeeService employeeManager, IHostingEnvironment hostingEnvironment)\n        {\n            _employeeManager = employeeManager;\n            _hostingEnvironment = hostingEnvironment;\n        }",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\Controllers\\EmployeeController.cs",
+            "snippet": "public EmployeeController(IEmployeeService employeeManager, IHostingEnvironment hostingEnvironment)\n        {\n            _employeeManager = employeeManager;\n            _hostingEnvironment = hostingEnvironment;\n        }",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "line": 17,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "c7eefba7-10cd-4bee-b75c-932e20c72be3",
+          "ruleId": "Api.0002",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.AspNetCore.Hosting.IWebHostEnvironment. Microsoft.Extensions.Hosting",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "_hostingEnvironment = hostingEnvironment;",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\Controllers\\EmployeeController.cs",
+            "snippet": "_hostingEnvironment = hostingEnvironment;",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "line": 20,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "87da2cf5-6c6a-4dfb-8569-7daa2e8640b1",
+          "ruleId": "Api.0002",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.AspNetCore.Hosting.IWebHostEnvironment. Microsoft.Extensions.Hosting",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "_hostingEnvironment",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\Controllers\\EmployeeController.cs",
+            "snippet": "_hostingEnvironment",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "line": 15,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "035f5470-0a48-4a7d-b49d-b1d08b940d1f",
+          "ruleId": "Api.0002",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.AspNetCore.Hosting.IWebHostEnvironment. Microsoft.Extensions.Hosting",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public EmployeeController(IEmployeeService employeeManager, IHostingEnvironment hostingEnvironment)\n        {\n            _employeeManager = employeeManager;\n            _hostingEnvironment = hostingEnvironment;\n        }",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\Controllers\\EmployeeController.cs",
+            "snippet": "public EmployeeController(IEmployeeService employeeManager, IHostingEnvironment hostingEnvironment)\n        {\n            _employeeManager = employeeManager;\n            _hostingEnvironment = hostingEnvironment;\n        }",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "line": 17,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "c884fc9c-951c-487f-bcde-d2c8e785f6cc",
+          "ruleId": "Api.0002",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.AspNetCore.Hosting.IWebHostEnvironment. Microsoft.Extensions.Hosting",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "_hostingEnvironment = hostingEnvironment;",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\Controllers\\EmployeeController.cs",
+            "snippet": "_hostingEnvironment = hostingEnvironment;",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "line": 20,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b1266f17-d167-40f3-b5e1-fd831312ae30",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "DotNetCoreApplication\\DotNetCoreApplication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Home/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "DotNetCoreApplication\\Startup.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Home/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 52,
+            "column": 16
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "API has a behavioral change in selected .NET version: code and binaries may behave differently at runtime without needing recompilation, but the new behavior might be undesirable and require updates.",
+      "label": "Behavioral change in selected .NET version",
+      "severity": "Potential",
+      "effort": 1
+    }
+  }
+}

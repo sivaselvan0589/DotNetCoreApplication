@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using DotNetCoreApplication.Entities;
 using DotNetCoreApplication.Interfaces;
 using DotNetCoreApplication.Models;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetCoreApplication.Controllers
@@ -13,13 +13,15 @@ namespace DotNetCoreApplication.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeManager;
-        private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly IHostEnvironment _hostingEnvironment;
 
-        public EmployeeController(IEmployeeService employeeManager, IHostingEnvironment hostingEnvironment)
+
+        public EmployeeController(IEmployeeService employeeManager, IHostEnvironment hostingEnvironment)
         {
             _employeeManager = employeeManager;
             _hostingEnvironment = hostingEnvironment;
         }
+
 
         /// <summary>
         /// This action method is used for show employee details
