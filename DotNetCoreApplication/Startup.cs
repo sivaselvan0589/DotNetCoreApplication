@@ -29,10 +29,13 @@ namespace DotNetCoreApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            var connectionString =
+    Configuration.GetConnectionString("DefaultConnection")
+    ?? Configuration["Db:ConnectionString"];
 
             //Configure Connection String
             services.AddDbContext<DataContext>(options =>
-              options.UseSqlServer(Configuration.GetConnectionString("DBSqlConnection")));
+              options.UseSqlServer(connectionString));
 
             //Employee service  
             services.AddScoped<IEmployeeService, EmployeeService>();
